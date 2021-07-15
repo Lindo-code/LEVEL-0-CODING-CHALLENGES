@@ -3,3 +3,8 @@ function toFahrenheit(num) {
   return ans;
 }
 
+function toCelcius(num) {
+  var ans = (num - 32) * 5/9;
+  return ans;
+}
+
