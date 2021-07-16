@@ -13,8 +13,3 @@ function vowels(word1) {
   return words;
 }
 
-
-
-
-
-
