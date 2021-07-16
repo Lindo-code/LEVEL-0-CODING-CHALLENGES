@@ -9,7 +9,7 @@ function minsToHoursMins(num) {
   if (hours2 > 1) {
     hoursStr = "hours";
   }
-  if (mins > 1) {
+  if (mins == 0 || mins > 1 ) {
     minsStr = "minutes";
   }
   console.log(hours2 +' '+ hoursStr +', '+ mins +' '+ minsStr +'.');
