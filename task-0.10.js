@@ -18,6 +18,6 @@ function findSimilar (str1, str2) {
     }
     similar = similar.slice(0,-2);
     similar = "Common letters: " + similar;
-    return(similar);
+    console.log(similar);
 }
 
