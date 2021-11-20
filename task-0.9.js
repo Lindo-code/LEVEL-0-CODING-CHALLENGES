@@ -1,20 +1,16 @@
-function vowels(word1) {
-  word1 = word1.toLowerCase();
-  x = word1.length;
-  var vowels = "aeiou";
-  var word = "";
-  var letterDump = "";
-  for (i = 0;i < x; i++ ){
-    var character = word1[i]
-    if (vowels.indexOf(character) >= 0){
-      if (word.indexOf(character) >= 0){
-        letterDump = character;
-      } else {
-        word += character + ", ";
+function vowels(str) {
+  str = str.toLowerCase();
+  let vowels = "aeiou"; let vowelsFound = "";
+  for (let i = 0; i < str.length; i++ ){
+    if (vowels.indexOf(str[i]) >= 0){
+      if (vowelsFound.indexOf(str[i]) >= 0) {
+        continue;
       }
-    }
+      vowelsFound += `${str[i]}, `;
+    };
   }
-  var words = word.slice(0, -2);
-  words = "Vowels: " + words;
-  console.log(words);
+  vowelsFound = vowelsFound.slice(0, -2);
+  vowelsFound = `Vowels: ${vowelsFound}`;
+  console.log(vowelsFound);
 }
+vowels("Umuzi");
