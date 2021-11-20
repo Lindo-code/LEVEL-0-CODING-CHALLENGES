@@ -1,10 +1,10 @@
-function toFahrenheit(num) {
-  var ans = (num * 9/5) + 32;
-  return ans;
+function toFahrenheit(celcius) {
+  let fahrenheit = (celcius * 9/5) + 32;
+  return `${fahrenheit.toFixed(1)} degrees fahrenheit.`;
 }
 
-function toCelcius(num) {
-  var ans = (num - 32) * 5/9;
-  return ans;
+function toCelcius(fahrenheit) {
+  let celcius = (fahrenheit - 32) * 5/9;
+  return `${celcius.toFixed(1)} degrees celcius.`;
 }
-
+console.log(toCelcius(66), toFahrenheit(28));
