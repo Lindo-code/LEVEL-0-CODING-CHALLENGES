@@ -1,5 +1,5 @@
-function findSimilar (str1, str2) {
-  str1 = str1.toLowerCase(); str2 = str2.toLowerCase();
+function findSimilar (word1, word2) {
+  const str1 = word1.toLowerCase(); const str2 = word2.toLowerCase();
   let similarLetters = ''; let search =""; let compare = "";
   if(str1.length > str2.length) {
     search = str1; compare = str2;

@@ -1,6 +1,6 @@
-function vowels(str) {
-  str = str.toLowerCase();
-  let vowels = "aeiou"; let vowelsFound = "";
+function vowels(word) {
+  const str = word.toLowerCase();
+  const vowels = "aeiou"; let vowelsFound = "";
   for (let i = 0; i < str.length; i++ ){
     if (vowels.indexOf(str[i]) >= 0){
       if (vowelsFound.indexOf(str[i]) >= 0) {
