@@ -1,7 +1,7 @@
 function minsToHoursMins(num) {
   let hoursStr = "hours"; let minsStr = "minutes";
-  let getHours = num / 60; let hours = Math.floor(getHours);
-  let getMins = (getHours - hours) * 60; let mins = Math.round(getMins);
+  const getHours = num / 60; const hours = Math.floor(getHours);
+  const getMins = (getHours - hours) * 60; const mins = Math.round(getMins);
   if (hours === 1) {
     hoursStr = "hour";
   }
